@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    flex-direction:wrap-reverse;
+    justify-content:start;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    right: 1020px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+ul{
+    
+    display: flex;
+    justify-content:flex-end;
+    gap: 25px;
+    list-style: none;
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    font-family: "Marck Script", cursive;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
+
+
+
+.img{
+    background: url("https://preview.colorlib.com/theme/tralive/assets/img/hero/h1_hero1.png.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+.img_text h1{
+    
+    color: rgb(15, 15, 14);
+    display: flex;
+    justify-content: center;
+    
+}
+li{
+    cursor: pointer;
+}
+.img_text h3{
+    color: rgb(15, 15, 14);
+    display: flex;
+    justify-content: center;
+}
+.explore{
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    background-color: rgba(black);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+}
+.car img{
+position: absolute;
+top: 350px;
+left: 500px;
+animation-name: car;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+}
+@keyframes car{
+    0%{
+        right:50%;
+    }
+    50%{
+        left:50%;
+    }
+    100%{
+        left:50%;
+    }
+}
+.end_text h3{
+    color: rgb(black);
+    display: flex;
+    justify-content: center;
+}
+
+.end_text h1{
+    color: rgb(black);
+    display: flex;
+    justify-content: center;
+}
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transform: translateY(180px);
+}
+
+.slogan h2 {
+    color: var(--blue);
+    font-size: 40px;
+    font-family: var(--font-fam1);
+}
+
+.events {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translateY(200px);
+}
+
+.card {
+    width: calc(100% / var(--product-row-count) - var(--product-gap) - 
+    (var(--product-gap) / var(--product-row-count)));
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid wheat;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card .desc a {
+    color: var(--blue);
+}
+
+.card .desc h3 {
+    color: var(--blue-child);
+}
+
+.card .date {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card .date h4 {
+    color: var(--blue-child);
+}
+
+.card .date p {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+
